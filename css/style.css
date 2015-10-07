@@ -9,7 +9,7 @@ body{
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -230,10 +230,6 @@ h1, h2, h3, h4, h5, p {
   margin-top: 20px;
 }
 
-.features_box{
-  margin-top: 25px;
-}
-
 .course_box{
   width: 40%;
   margin-left: 5%;
@@ -244,16 +240,43 @@ h1, h2, h3, h4, h5, p {
   border-radius: 10px;
   margin-bottom: 25px;
   margin-top: 25px;
+  overflow: hidden;
 
 }
 .course_label{
   width: 100%;
   height: 10px;
   background-color: green;
-  margin-top: 90px;
+  margin-top: 14px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  color: white;
+  font-size: 0.55em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }
+
+.course_img{
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.course_box img{
+  width: 50px;
+  height: 52px;
+  margin-top: 10px;
+}
+
+
+.features_box{
+  margin-top: 25px;
+}
+
+
 
 .icon_row{
  margin-top: 5px;
@@ -360,4 +383,9 @@ h1, h2, h3, h4, h5, p {
 #footer{
   width: 100%;
   height: 50px;
+  text-align: center;
+}
+
+.social_logos{
+  width: 25px;
 }
