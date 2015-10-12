@@ -27,13 +27,13 @@
     <nav id="menu_nav" class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button id="mobile_menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand " href="#">
+            <a id="brand" class="navbar-brand " href="#">
               <img id="logo_img" alt="Quintapata Logo" src="images/logorails.png"/>
               <h1 id="logo_text"> Aprende<span id="logo_color">Rails</span>.com</h1>
             </a>
@@ -42,12 +42,12 @@
         <div class="navbar navbar-fixed-top" >
             <ul class="nav navbar-nav nav_fix">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><b>Login</b> <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><b>Ingresa</b> <span class="caret"></span></a>
             			<ul id="login-dp" class="dropdown-menu dropdown-menu-right">
             				<li>
             					 <div class="row">
             							<div class="col-md-12">
-            								Login via
+            								Ingresa vía:
                             <div class="social-buttons">
             									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
             									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
@@ -76,13 +76,17 @@
 
               <p class="white_color">Crea tu cuenta gratis: </p>
 
-              <div class="row">
-                <div class="social_signin center ">
-                  <button type="button" class="btn btn-primary">Regístrate con Facebook</button>
-                </div>
-                <div class="social_signin center ">
-                  <button type="button" class="btn btn-info">Regístrate con Twitter</button>
-                </div>
+              <div class="sign_buttons">
+
+                    <div class="social_signin center ">
+                      <button type="button" class="btn btn-primary">Regístrate con Facebook</button>
+                    </div>
+
+                    <div class="social_signin center ">
+                      <button type="button" class="btn btn-info">Regístrate con Twitter</button>
+                    </div>
+
+
               </div>
 
       </div>
@@ -101,6 +105,7 @@
       <div id="section_3" class="container">
 
               <div class="row">
+                <div class="col-md-6">
                   <div class="sec_3_text">
                     <h3> CREA APLICACIONES WEB </h3>
                     <p> Escoge el proyecto que te gustaría construir y te guiamos paso
@@ -108,13 +113,14 @@
                       Los puedes ver en cualquier momento y en cualquier lugar.
                     </p>
                   </div>
-
+                </div>
+                <div class="col-md-6">
                     <div class="course_box">
                       <div class="course_img" >
                         <img src="images/logorails.png">
                         <h6> Los Fundamentos </h6>
                       </div>
-                      <div class="course_label">
+                      <div class="course_label_easy">
                         Principiante
                       </div>
                     </div>
@@ -124,109 +130,112 @@
                         <img src="images/market.png">
                         <h6> Market Place </h6>
                       </div>
-                      <div class="course_label">
+                      <div class="course_label_hard">
                         Avanzado
                       </div>
                     </div>
+                  </div>
             </div>
 
 
               <div class="row">
+                <div class="col-md-6">
                   <div class="sec_3_text">
                     <h3> MEJORA SUS CARACTERISTICAS </h3>
                       <p> Nuestros codecast te ayudarán a añadir caracteristicas
                         importantes a tu aplicación para hacerlas únicas.
                       </p>
                   </div>
+                </div>
 
-              <div class="row features_box">
+                <div class="col-md-6">
+                      <div class="features_box">
 
-                  <div class="icon_row">
-                      <div class="div_icon">
-                        <div class="icon_holder email_icon">
-                            <img class="icon" alr="" src="images/email.png">
-                        </div>
-                        <div class="feature_description">
-                          <h5 class="features"> Emails </h5>
-                        </div>
-                      </div>
-                      <div class="div_icon">
-                        <div class="icon_holder rating_icon">
-                            <img class="icon" src="images/rating.png">
-                        </div>
-                        <div class="feature_description">
-                          <h5 class="features"> Rating </h5>
-                        </div>
-                      </div>
-                      <div class="div_icon">
-                        <div class="icon_holder fb_icon">
-                            <img class="icon" src="images/fb1.png">
-                        </div>
-                        <div class="feature_description">
-                          <h5 class="features"> Redes Sociales </h5>
-                        </div>
-                      </div>
-                  </div>
-
-
-                  <div class="icon_row">
-                        <div class="div_icon">
-                          <div class="icon_holder notification_icon">
-                              <img class="icon " src="images/notification.png">
-                          </div>
-                          <div class="feature_description">
-                            <h5 class="features"> Notificaciones </h5>
-                          </div>
-                        </div>
-                        <div class="div_icon">
-                          <div class="icon_holder pay_icon">
-                              <img class="icon" src="images/pay.png">
-                          </div>
-                          <div class="feature_description">
-                            <h5 class="features"> Pagos </h5>
-                          </div>
-                        </div>
-                        <div class="div_icon">
-                            <div class="icon_holder map_icon">
-                                <img class="icon" src="images/map.png">
+                      <div class="icon_row">
+                          <div class="div_icon">
+                            <div class="icon_holder email_icon">
+                                <img class="icon" alr="" src="images/email.png">
                             </div>
-                          <div class="feature_description">
-                            <h5 class="features"> Mapas </h5>
+                            <div class="feature_description">
+                              <h5 class="features"> Emails </h5>
+                            </div>
+                          </div>
+                          <div class="div_icon">
+                            <div class="icon_holder rating_icon">
+                                <img class="icon" src="images/rating.png">
+                            </div>
+                            <div class="feature_description">
+                              <h5 class="features"> Rating </h5>
+                            </div>
+                          </div>
+                          <div class="div_icon">
+                            <div class="icon_holder fb_icon">
+                                <img class="icon" src="images/fb1.png">
+                            </div>
+                            <div class="feature_description">
+                              <h5 class="features"> Redes Sociales </h5>
+                            </div>
                           </div>
                       </div>
+
+
+                      <div class="icon_row">
+                            <div class="div_icon">
+                              <div class="icon_holder notification_icon">
+                                  <img class="icon " src="images/notification.png">
+                              </div>
+                              <div class="feature_description">
+                                <h5 class="features"> Notificaciones </h5>
+                              </div>
+                            </div>
+                            <div class="div_icon">
+                              <div class="icon_holder pay_icon">
+                                  <img class="icon" src="images/pay.png">
+                              </div>
+                              <div class="feature_description">
+                                <h5 class="features"> Pagos </h5>
+                              </div>
+                            </div>
+                            <div class="div_icon">
+                                <div class="icon_holder map_icon">
+                                    <img class="icon" src="images/map.png">
+                                </div>
+                              <div class="feature_description">
+                                <h5 class="features"> Mapas </h5>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="icon_row">
+
+                        <div class="div_icon">
+                          <div class="icon_holder search_icon">
+                              <img class="icon" src="images/search.png">
+                          </div>
+                          <div class="feature_description">
+                            <h5 class="features"> Busquedas </h5>
+                          </div>
+                        </div>
+
+                        <div class="div_icon">
+                          <div class="icon_holder secure_icon">
+                              <img class ="icon" src="images/secure.png">
+                          </div>
+                          <div class="feature_description">
+                            <h5 class="features"> Autorizaciones </h5>
+                          </div>
+                        </div>
+
+                        <div class="div_icon">
+                          <div class="icon_holder ajax_icon">
+                              <img class="icon" src="images/ajax.png">
+                          </div>
+                          <div class="feature_description">
+                            <h5 class="features"> Ajax </h5>
+                          </div>
+                        </div>
                   </div>
-
-                  <div class="icon_row">
-
-                    <div class="div_icon">
-                      <div class="icon_holder search_icon">
-                          <img class="icon" src="images/search.png">
-                      </div>
-                      <div class="feature_description">
-                        <h5 class="features"> Busquedas </h5>
-                      </div>
-                    </div>
-
-                    <div class="div_icon">
-                      <div class="icon_holder secure_icon">
-                          <img class ="icon" src="images/secure.png">
-                      </div>
-                      <div class="feature_description">
-                        <h5 class="features"> Autorizaciones </h5>
-                      </div>
-                    </div>
-
-                    <div class="div_icon">
-                      <div class="icon_holder ajax_icon">
-                          <img class="icon" src="images/ajax.png">
-                      </div>
-                      <div class="feature_description">
-                        <h5 class="features"> Ajax </h5>
-                      </div>
-                    </div>
-
-
-                  </div>
+                </div>
 
 
 
@@ -245,14 +254,14 @@
           <h4>CONVIERTETE EN UN GRAN PROGRAMADOR:</h4>
         </div>
 
-        <div class="row">
-          <div class="social_signin center ">
+
+          <div class="social_signin_button center ">
             <button type="button" class="btn btn-primary">Regístrate con Facebook</button>
           </div>
-          <div class="social_signin center ">
+          <div class="social_signin_button center ">
             <button type="button" class="btn btn-info">Regístrate con Twitter</button>
           </div>
-        </div>
+
 
       </div>
 

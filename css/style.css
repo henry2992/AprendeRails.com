@@ -2,7 +2,7 @@ body{
   font-size: 18px;
   margin: 0 !important;
   padding: 0 !important;
-  font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif !important;
 }
 
 .center{
@@ -30,9 +30,11 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0 !important;
 }
 
+#mobile_menu{
+  display: none;
+}
 
-
-.navbar-brand
+#brand
 {
     position: absolute;
     width: 100%;
@@ -46,10 +48,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: black !important;
 }
 
-.navbar-toggle{
-  float: left !important;
-  margin-left: 10px;
-}
 
 /* LOG IN DATA*/
 
@@ -88,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin:12px 0
 }
 #login-dp .social-buttons a{
-    width: 49%;
+    width: 45%;
 }
 #login-dp .form-group {
     margin-bottom: 10px;
@@ -110,7 +108,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-color:#59b5fa;
 }
 
-#menu_nav h1{
+#brand h1{
   font-weight: 700;
   font-size: 0.8em;
   color: black;
@@ -126,12 +124,16 @@ h1, h2, h3, h4, h5, h6, p {
   display: inline-block;
 }
 
+.sign_buttons{
+  margin-bottom: 40px;
+}
+
 
 /*************** SECTION 1 ********************/
 
 #section_1{
   width: 100vw;
-  height: 95vh;
+  height: auto;
   background: url(../images/bg.jpg);
   background-position: center center;
   background-repeat: none;
@@ -139,7 +141,6 @@ h1, h2, h3, h4, h5, h6, p {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-
   position: relative;
 }
 
@@ -183,9 +184,7 @@ h1, h2, h3, h4, h5, h6, p {
 /*************** SECTION 2 ********************/
 #section_2{
   width: 100%;
-  height: 200px;
   background-color: rgb(231, 76, 60);
-
   position: relative;
 }
 
@@ -205,12 +204,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 #section_2_title{
   margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 /*************** SECTION 3 ********************/
 
 #section_3{
   width: 100%;
+  overflow: hidden;
 }
 
 #section_3 h3{
@@ -232,21 +233,30 @@ h1, h2, h3, h4, h5, h6, p {
 
 .course_box{
   width: 40%;
-  margin-left: 5%;
-  margin-right: 2.5%;
+  margin: 25px 2.5% 25px 2.5%;
   height: 100px;
   border: 1px grey solid;
   display: inline-block;
   border-radius: 10px;
-  margin-bottom: 25px;
-  margin-top: 25px;
   overflow: hidden;
-
 }
-.course_label{
+.course_label_easy{
   width: 100%;
   height: 10px;
   background-color: green;
+  margin-top: 14px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  font-size: 0.55em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.course_label_hard{
+  width: 100%;
+  height: 10px;
+  background-color: red;
   margin-top: 14px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -274,6 +284,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .features_box{
   margin-top: 25px;
+  width: 270px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -345,7 +359,6 @@ h1, h2, h3, h4, h5, h6, p {
 .features{
   text-transform: uppercase;
   font-size: 0.7em;
-
 }
 
 
@@ -372,9 +385,18 @@ h1, h2, h3, h4, h5, h6, p {
 #section_4 h4 {
   font-weight: lighter;
   font-size: 1em;
+  margin-top: 10px !important;
+  margin-bottom: 20px !imSportant;
 }
 #section_4_title{
     margin-top: 20px;
+}
+
+.social_signin_button button{
+      width: 200px;
+      margin-top: 10px;
+      left: 0;
+      right: 0;
 }
 
 
@@ -388,4 +410,73 @@ h1, h2, h3, h4, h5, h6, p {
 
 .social_logos{
   width: 25px;
+}
+
+/************ MEDIA QUERIES ******************/
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+}
+
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) {
+
+  .navbar-fixed-top{
+      margin-top: -9px !important;
+  }
+
+  
+
+  #info_h2 {
+     margin-top: 80px;
+   }
+
+   #info_h2 h2{
+     font-size: 2.5em;
+   }
+
+   #info_h1{
+     margin-top: 35px;
+
+   }
+   #info_h1 h1{
+    font-size: 3.5em;
+  }
+
+  #section_2_subtitle{
+    margin-top: 30px;
+    font-size: 1.2em;
+  }
+  #section_2_title{
+    margin-top: 30px;
+    font-size: 1.5em;
+  }
+
+  .sign_buttons{
+    text-align: center;
+  }
+
+  .social_signin{
+    display: inline-block;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 992px) {
+
+  .course_box{
+    width: 35%;
+    margin: 25px 0% 25px 10%;
+  }
+
+
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
 }

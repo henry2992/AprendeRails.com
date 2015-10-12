@@ -1,0 +1,31 @@
+
+/********* NAV BAR ********/
+#mobile_menu{
+  display: block;
+}
+
+#brand-app h1{
+  font-weight: 700;
+  font-size: 0.8em;
+  color: black;
+  display: inline-block;
+}
+
+/******* SECTION 1 APP *********/
+
+#section-1-app{
+  /*height: 200px;*/
+  border: 1px red solid;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#section-1-app h1{
+  padding: 0px;
+  margin: 0px 0px 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #222;
+  letter-spacing: 0.3em;
+}
