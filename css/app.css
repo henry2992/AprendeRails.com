@@ -54,7 +54,7 @@
 
 .courses{
   width: 100%;
-  border: 2px solid green;
+  border: 1px solid #F2F2F2;
   margin-top: 50px;
 }
 .course-holder{
@@ -63,7 +63,6 @@
 .course-difficulty{
   width: 120px;
   height: 30px;
-  background-color: #58BF44;
   color: white;
   line-height: 25px;
   padding: 2px 5px 2px 5px;
@@ -73,53 +72,123 @@
   text-align: center;
   text-transform: uppercase;
 }
+.easy{
+    background-color: #58BF44;
+}
+
+.medium{
+  background-color: rgb(255, 143, 51);
+}
+.hard{
+  background-color: rgb(228, 25, 25);
+}
+
+.course-info{
+  margin-left: 10px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.course-info h1{
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.course-info p{
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.5;
+  margin: 10px 0px 1.5em 0px !important;
+}
+
+
 .course-holder img{
   width: 100%;
 }
 
 .course-login{
   width: 80%;
+  background-color: rgb(88, 191, 68);
   margin-left: 10%;
   text-align: center;
-  border: red 1px solid;
+  text-transform: uppercase;
   margin-top: 20px;
+  cursor: pointer;
 }
 .course-login-link{
   display: block;
-  border: green 2px solid;
   margin: 0;
   padding: 0px;
   height: 35px;
-  line-height: 30px;
+  line-height: 35px;
   text-decoration: none !important;
+  font-size: 0.8em;
+  font-weight: bolder;
+  color: white;
+}
 
+.course-login-link:hover{
+  text-decoration: none;
+  color: white;
 }
 .app-preview{
   width: 80%;
   text-align: center;
-  border: red 1px solid;
   margin: 20px 0 20px 10%;
+  background-color: rgb(38, 192, 190);
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 10%;
 }
 
 .app-preview-link{
   display: block;
-  border: green 2px solid;
+  color: white;
   margin: 0;
   padding: 0px;
   height: 35px;
-  line-height: 30px;
+  line-height: 35px;
+  font-size: 0.8em;
+  font-weight: bolder;
   text-decoration: none !important;
 }
 
-.course-future{
-  display: block;
-  border: green 2px solid;
+.app-preview-link:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.course-soon{
+  width: 80%;
+  background-color: rgb(195, 195, 195);
+  margin-left: 10%;
+  text-align: center;
+  text-transform: uppercase;
   margin: 20px 0 20px 10%;
+  cursor: pointer;
+}
+
+.course-soon-link{
+  display: block;
+  color: white;
+  margin: 0;
   padding: 0px;
   height: 35px;
-  line-height: 30px;
+  line-height: 35px;
+  font-size: 0.8em;
+  font-weight: bolder;
   text-decoration: none !important;
 }
+
+.course-soon-link:hover{
+
+  color: white;
+}
+
 
 /********FOOTER OF THE APP **********/
 
@@ -133,4 +202,36 @@
 }
 .footer-app-content{
   margin-top: 25px;
+}
+
+/************ MEDIA QUERIES ******************/
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+}
+
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) {
+
+    .course-holder img{
+      height: 220px;
+    }
+    .course-info{
+      height: 120px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 992px) {
+
+
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
 }
