@@ -1,5 +1,5 @@
 # AprendeRails
-	Copyright &copy 2015
+	Copyright 2015
 	Ruby v. 2.2.0
 	Rails v. 4.2.1
 
