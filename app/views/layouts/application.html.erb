@@ -8,7 +8,11 @@
 </head>
 <body>
 
-<%= render "layouts/navbar" %>
+<%# if user.signed_in? %>
+	<%# render "layouts/navbar" %>
+<%# else %>
+	<%= render "layouts/header" %>
+<%# end %>
 
 <%= yield %>
 
