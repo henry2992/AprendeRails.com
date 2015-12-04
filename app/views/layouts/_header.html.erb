@@ -1,0 +1,36 @@
+<nav id="menu_nav" class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button id="mobile_menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="brand" class="navbar-brand " href="#">
+        <%= image_tag("logorails.png", id: "logo_img", alt: "Aprende Rails") %>
+        <h1 id="logo_text"> Aprende<span id="logo_color">Rails</span>.com</h1>
+      </a>
+    </div>
+  </div>
+  <div class="navbar navbar-fixed-top" >
+    <ul class="nav navbar-nav nav_fix">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><b>Ingresa</b> <span class="caret"></span></a>
+    			<ul id="login-dp" class="dropdown-menu dropdown-menu-right">
+    				<li>
+    					 <div class="row">
+    							<div class="col-md-12">
+    								Ingresa vía:
+                    <div class="social-buttons">
+    									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+    									<a href="/auth/twitter" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+  								</div>
+    					 </div>
+             </div>
+    				</li>
+    			</ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
