@@ -9,11 +9,13 @@
 </head>
 <body>
 
-<%# if user.signed_in? %>
-	<%# render "layouts/navbar" %>
-<%# else %>
+<% if current_user %>
+	<%= render "layouts/navbar" %>
+<% else %>
 	<%= render "layouts/header" %>
-<%# end %>
+<% end %>
+
+<%= render 'layouts/flash' %>
 
 <%= yield %>
 
