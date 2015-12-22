@@ -1,0 +1,278 @@
+/********* NAV BAR ********/
+#mobile_menu{
+  display: block;
+}
+
+#brand-app h1{
+  font-weight: 700;
+  font-size: 0.8em;
+  color: black;
+  display: inline-block;
+}
+
+
+/********* COURSE DESCRIPTION *********/
+
+.course-landing-description{
+  height: 450px;
+  width: 100%;
+  background: url(../images/fundamentals.png) center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: white;
+  margin-top: 0px;
+}
+
+.course-landing-description h2{
+  font-weight: 300;
+  line-height: 1.4em;
+  font-size: 1.5em;
+  text-align: left;
+  margin-top: 100px !important;
+}
+
+.course-landing-description h1 {
+  font-size: 1.9em;
+  width: 100%;
+  text-align: left;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 35px !important;
+}
+/*Should change this for new name*/
+.course-login{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  background-color: rgb(88, 191, 68);
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.course-login-link{
+  display: block;
+  margin: 0;
+  padding: 0px;
+  height: 35px;
+  line-height: 35px;
+  text-decoration: none !important;
+  font-size: 0.8em;
+  font-weight: bolder;
+  color: white;
+}
+
+.course-login-link:hover{
+  text-decoration: none;
+  color: white;
+}
+
+/*Completition Time*/
+.completition-time{
+  width: 100%;
+  margin-top: 35px;
+}
+.completition-time h3{
+  text-transform: uppercase;
+  margin: 10px 5px !important;
+  font-weight: 700;
+  line-height: 1.4em;
+  font-size: 0.9em;
+}
+.completition-time p{
+  text-align: justify;
+  font-size: 0.75em;
+  line-height: 2em;
+  margin-bottom: 0px;
+  font-weight: 300;
+  color: #555;
+  margin: 0px 10px 1.5em !important;
+}
+.one-hour{
+    margin-right: 15% !important;
+}
+
+.time{
+  background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	left bottom,
+	color-stop(0, #1ED15F),
+	color-stop(1, #0599DE)
+  );
+  background-image: -o-linear-gradient(left, #1ED15F 0%, #0599DE 100%);
+  background-image: -moz-linear-gradient(left, #1ED15F 0%, #0599DE 100%);
+  background-image: -webkit-linear-gradient(left, #1ED15F 0%, #0599DE 100%);
+  background-image: -ms-linear-gradient(left, #1ED15F 0%, #0599DE 100%);
+  background-image: linear-gradient(to left, #1ED15F 0%, #0599DE 100%);
+  display: inline;
+  padding: 0.3em 0.7em 0.4em;
+  font-weight: bold;
+  line-height: 1;
+  color: #FFF;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+}
+
+.45-minutes{
+  padding-right: 25% !important;
+}
+.30-minutes{
+  padding-right: 45% !important;
+}
+
+/*Course Description*/
+.course-description{
+  width: 100%;
+  margin-top: 35px;
+}
+.course-description h2{
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+  margin: 10px 5px !important;
+  font-weight: 700;
+  line-height: 1.4em;
+  font-size: 0.9em;
+}
+.course-description p {
+  text-align: justify;
+  font-size: 0.85em;
+  line-height: 2em;
+  font-weight: 300;
+  color: #555;
+  margin: 0px 0px 0px 1em !important;
+}
+
+/*Tools*/
+.course-tools{
+  width: 100%;
+  margin-top: 35px;
+}
+
+.course-tools h2{
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+  margin: 10px 5px !important;
+  font-weight: 700;
+  line-height: 1.4em;
+  font-size: 0.9em;
+}
+
+.course-tools p{
+  text-align: justify;
+  font-size: 0.85em;
+  line-height: 1em;
+  font-weight: 300;
+  color: #555;
+  margin: 0px 0px 0px 1em !important;
+}
+
+.course-content{
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.course-title{
+  margin-bottom: 15px;
+  text-align: center;
+}
+.course-title h1{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 2em;
+  color: #222;
+  margin-top: 20px !important;
+}
+.course-title h3{
+  font-family: "Libre Baskerville",serif !important;
+  font-style: italic;
+  font-weight: 400;
+  color: #999 !important;
+  font-size: 1em;
+  margin-bottom: 15px !important;
+}
+/*Lecture*/
+.lecture{
+  width: 100%;
+}
+
+.lecture-title{
+  width: 100%;
+  border-bottom: 1px solid #EDEDE8;
+  padding: 15px;
+  background-color: #EFEFEF;
+}
+
+.lecture-title h1{
+  color:  #4F4F4F;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.lecture-section{
+  width: 100%;
+  border-bottom: 1px solid #EDEDE8;
+  padding: 10px 10px 10px 15px;
+}
+
+.lecture-section img{
+  width: 20px;
+  margin-right: 5px;
+}
+
+.lecture-section a{
+  text-decoration: none;
+  color: #222;
+  cursor: pointer;
+}
+
+.lecture-section a:hover{
+  text-decoration: none;
+  color: #222;
+}
+
+/************ MEDIA QUERIES ******************/
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+}
+
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) {
+
+  .course-landing-description h2{
+    text-align: center ;
+    font-size: 2em;
+  }
+  .course-landing-description h1{
+    text-align: center ;
+    font-size: 2.5em;
+  }
+  
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 992px) {
+
+
+
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+

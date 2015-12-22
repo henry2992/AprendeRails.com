@@ -1,0 +1,176 @@
+/****NAV BAR*/
+#mobile_menu{
+  display: block;
+}
+
+#brand-app h1{
+  font-weight: 700;
+  font-size: 0.8em;
+  color: black;
+  display: inline-block;
+}
+
+
+/************Section 1**************/
+
+#section-1-codecast{
+  margin: 80px 0 25px 0;
+  text-align: center;
+}
+
+#section-1-codecast h1{
+  padding: 0px !important;
+  margin: 0px 0px 10px !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2em;
+  color: #222;
+  letter-spacing: 0.3em;
+}
+#section-1-codecast h4{
+  box-sizing: border-box;
+  color: #999;
+  font-family: 'Libre Baskerville', serif !important;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 18.8px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 3px;
+  text-align: center;
+  text-rendering: optimizelegibility;
+  text-shadow: rgba(0, 0, 0, 0.004) 1px 1px 1px;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-text-size-adjust: none;
+}
+.line-section{
+  width: 100%;
+  height: 1px;
+  background: #EFEFEF none repeat scroll 0% 0%;
+}
+
+
+
+/*Section 2*/
+
+.codecast-link{
+	text-decoration: none;
+	color: #F2F2F2 ;
+
+}
+
+.codecast-link:hover{
+	text-decoration: none;
+}
+
+.codecast{
+	width: 100%;
+	border: 1px solid #F2F2F2 !important;
+	margin-top: 50px;
+}
+
+.codecast-holder{
+	height: 150px;
+	background-color: rgb(26, 167, 189);
+	position: relative;
+}
+
+.codecast-title{
+	color: white;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+}
+
+.codecast-title-holder{
+	padding-top: 60px;
+	width: 250px;
+	margin: 0 auto;
+}
+
+.codecast-img-holder{
+	width: 50px;
+	margin: 0 auto;
+}
+
+.codecast-img{
+	margin-top: 10px;
+	width: 50px;
+}
+
+
+
+
+.codecast-difficulty{
+  width: 120px;
+  height: 30px;
+  color: white;
+  line-height: 25px;
+  padding: 2px 5px 2px 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.easy{
+    background-color: #58BF44;
+}
+
+.medium{
+  background-color: rgb(255, 143, 51);
+}
+.hard{
+  background-color: rgb(228, 25, 25);
+}
+
+
+.codecast-info{
+  margin-left: 10px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.codecast-info h1{
+  color: black;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.codecast-info p{
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.5;
+  margin: 10px 0px 1.5em 0px !important;
+}
+/************Background Colors************/
+
+/********FOOTER OF THE APP **********/
+
+#footer-app{
+  width: 90%;
+  text-align: center;
+  margin-top: 35px;
+  margin-left: 5%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.footer-app-content{
+  margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
