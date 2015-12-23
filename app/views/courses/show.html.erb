@@ -49,83 +49,36 @@
 
               <!-- COURSE CONTENT-->
               <div class="course-content">
-                <div class="course-title">
-                  <h1>Contenido del Curso</hi>
-                  <h3><%= @course.title %></h3>
-                </div>
+	                <div class="course-title">
+	                  <h1>Contenido del Curso</hi>
+	                  <h3><%= @course.title %></h3>
+	                </div>
 
-                <div class="lecture">
-                	<% @course.chapters.each do |chapter| %>
-                		<div class="lecture-title">
-		                    <h1><%= chapter.title%></h1>
-		                 </div>
+	                <div class="lecture">
+	                	<% @course.chapters.each do |chapter| %>
+	                		<div class="lecture-title">
+			                    <h1><%= chapter.title%></h1>
+			                 </div>
 
-                	<% end %>
-                	
+			                 <% chapter.subchapters.each do |subchapter| %>
+			                 	<div class="lecture-section">
 
-                  <div class="lecture-title">
-                    <h1>The Social Network</h1>
-                  </div>
+			               
+				                    
+				                    <%= link_to '#', :class => "lecture-link" do %>
+									  <%= image_tag('play.png') %> <%= subchapter.title %>
+									<% end %>
 
-
-                  <div class="lecture-section">
-                    <a href="course_video.html"  class="lecture-link">
-                      <img src="images/play.png">
-                       Intro 
-                   </a>
-                  </div>
-                  <div class="lecture-section">
-                    <a class="lecture-link">
-                      <img src="images/play.png">
-                       Intro 
-                   </a>
-                  </div>
-                  <div class="lecture-section">
-                    <a class="lecture-link">
-                      <img src="images/play.png">
-                       Intro 
-                   </a>
-                  </div>
-                  <div class="lecture-section">
-                    <a class="lecture-link">
-                      <img src="images/play.png">
-                       Intro 
-                   </a>
-                  </div>
-                </div>
+	                 			</div>
+			                 <% end %>
 
 
-                <div class="lecture">
-                  <div class="lecture-title">
-                    <h1>Planning</h1>
-                  </div>
-                  <div class="lecture-section">
-                    <a class="lecture-link">
-                      <img src="images/play.png">
-                       Intro 
-                   </a>
-                  </div>
-                  <div class="lecture-section">
-                    <a class="lecture-link">
-                      <img src="images/play.png">
-                       Intro 
-                   </a>
-                  </div>
-                  <div class="lecture-section">
-                    <a class="lecture-link">
-                      <img src="images/play.png">
-                       Intro 
-                   </a>
-                  </div>
-                  <div class="lecture-section">
-                    <a class="lecture-link">
-                      <img src="images/play.png">
-                       Intro 
-                   </a>
-                  </div>
-                </div>
+	                	<% end %>
+
+	                
+
+	                </div>
 
 
               </div>
-
           </div>

@@ -11,8 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20151223200743) do
+ActiveRecord::Schema.define(version: 20151223205130) do
 
   create_table "chapters", force: :cascade do |t|
     t.string   "title"
@@ -22,9 +21,6 @@ ActiveRecord::Schema.define(version: 20151223200743) do
   end
 
   add_index "chapters", ["course_id"], name: "index_chapters_on_course_id"
-
-ActiveRecord::Schema.define(version: 20151223173158) do
-
 
   create_table "courses", force: :cascade do |t|
     t.string   "title"
@@ -40,14 +36,21 @@ ActiveRecord::Schema.define(version: 20151223173158) do
     t.string   "secondary_title"
   end
 
+  create_table "subchapters", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "chapter_id"
+    t.integer  "course_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "subchapters", ["chapter_id"], name: "index_subchapters_on_chapter_id"
+  add_index "subchapters", ["course_id"], name: "index_subchapters_on_course_id"
+
   create_table "uploads", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
-    t.boolean  "status",      default: false
-    t.string   "preview_url"
   end
 
   create_table "users", force: :cascade do |t|
