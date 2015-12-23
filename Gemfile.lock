@@ -201,13 +201,10 @@ GEM
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
     json (1.8.3)
-<<<<<<< HEAD
     jwt (1.5.2)
-=======
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
->>>>>>> 05043902220511bf527bd1ffaa8f8db0294d5edb
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -218,12 +215,9 @@ GEM
     mini_portile (0.6.2)
     minitest (5.8.3)
     multi_json (1.11.2)
-<<<<<<< HEAD
     multi_xml (0.5.5)
     multipart-post (2.0.0)
-=======
     nested_form (0.3.2)
->>>>>>> 05043902220511bf527bd1ffaa8f8db0294d5edb
     nokogiri (1.6.6.4)
       mini_portile (~> 0.6.0)
     oauth (0.4.7)
@@ -359,11 +353,8 @@ DEPENDENCIES
   fog
   jbuilder (~> 2.0)
   jquery-rails
-<<<<<<< HEAD
   omniauth-facebook
-=======
   mini_magick
->>>>>>> 05043902220511bf527bd1ffaa8f8db0294d5edb
   omniauth-twitter
   pg
   pry
