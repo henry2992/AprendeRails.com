@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151223173158) do
+ActiveRecord::Schema.define(version: 20151223191653) do
 
   create_table "courses", force: :cascade do |t|
     t.string   "title"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20151223173158) do
     t.datetime "updated_at",                  null: false
     t.boolean  "status",      default: false
     t.string   "preview_url"
+    t.string   "bg_picture"
   end
 
   create_table "uploads", force: :cascade do |t|
