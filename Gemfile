@@ -23,6 +23,11 @@ gem 'carrierwave'
 gem "mini_magick"
 gem "fog"
 
+gem 'rails_admin'
+gem 'carrierwave'
+gem "mini_magick"
+gem "fog"
+
 group :development, :test do
   gem 'sqlite3'
   gem 'pry'

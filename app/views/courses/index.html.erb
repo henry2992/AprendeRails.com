@@ -37,6 +37,10 @@
 		      <%if course.status == true %>
 		
 			      <%= render "courses/status_true", courses: course.preview_url %>
+
+		      <%if course.status == true %>
+		
+			      <%= render "courses/status_true", preview: course.preview_url, link: course_path(course)  %>
 			  <% else %>
 			      <%= render "courses/status_false" %>
 			  <% end%>
