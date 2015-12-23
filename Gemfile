@@ -16,13 +16,14 @@ gem 'will_paginate', '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'omniauth-twitter'
 
-gem 'rails_admin'
 
+gem 'omniauth-facebook'
+
+
+gem 'rails_admin'
 gem 'carrierwave'
 gem "mini_magick"
 gem "fog"
-
-
 
 group :development, :test do
   gem 'sqlite3'
