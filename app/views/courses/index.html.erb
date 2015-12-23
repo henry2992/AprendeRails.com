@@ -1,0 +1,49 @@
+<div class="container">
+  <!-- Section 1 App -->
+  <div id="section-1-app">
+    <h1 >Qué quieres crear el día de hoy?</h1>
+    <h4> Crear aplicaciones reales increíbles
+      desde cero y demostrar que fuera en su
+      cartera o utilizarlos para iniciar su
+      propio negocio.
+    </h4>
+  </div>
+  <div class="line-section"></div>
+
+	
+  	<% @courses.each do |course|%>
+		<div class="row">
+		  <!-- Course Ready -->
+		  <div class="col-md-4 col-sm-6">
+		    <div class="courses">
+		      <div class="course-holder">
+		      	
+		      	<%= image_tag course.picture.medium.url %>
+
+		      	<%if course.level == "principiante" %>
+		      		<div class="course-difficulty easy"><%= course.level %></div>
+		      	<%elsif course.level == "intermedio" %>
+		      		<div class="course-difficulty medium"><%= course.level %></div>
+		      	<%else%>
+		      		<div class="course-difficulty hard"><%= course.level %></div>	
+		      	<%end%>
+		        
+		      </div>
+		      <div class="course-info">
+		        <h1><%= course.title %></h1>
+		        <p><%= course.description %></p>
+		      </div>
+
+		      <%if course.status == true %>
+		
+			      <%= render "courses/status_true", courses: course.preview_url %>
+			  <% else %>
+			      <%= render "courses/status_false" %>
+			  <% end%>
+
+		    </div>
+		</div>
+	<%end%>
+
+
+</div>
