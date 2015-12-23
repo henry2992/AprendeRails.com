@@ -5,11 +5,8 @@
 
             	
               <div class="container">
-                  <h2>Learn how to build a social
-                     network using Ruby on Rails
-                   </h2>
-                  <h1>Build the next booming
-                    niche social network.
+                  <h2><%= @course.secondary_title %></h2>
+                  <h1><%= @course.principal_title %>
                   </h1>
                   <div class="course-login">
                     <a class="course-login-link">Entrar al curso </a>
@@ -33,18 +30,8 @@
               <!-- COURSE DESCRIPTION -->
               <div class="col-sm-4 course-description">
                 <h2>Descripción</h2>
-                <p> Did you discover the magical niche
-                   for a new social network? Learn how
-                   to make a social network platform
-                   where people can connect, and share
-                   information.
-                <br>
-                <br>
-                We advise this course for beginners
-                that want to get acquainted with
-                social engagement tools where you
-                will develop a social network a bit
-                like Facebook.com</p>
+                <p><%= @course.description %>
+                <br> 
               </div>
 
               <!-- COURSE TOOLS -->
@@ -64,13 +51,23 @@
               <div class="course-content">
                 <div class="course-title">
                   <h1>Contenido del Curso</hi>
-                  <h3>Fundamentos de Rails</h3>
+                  <h3><%= @course.title %></h3>
                 </div>
 
                 <div class="lecture">
+                	<% @course.chapters.each do |chapter| %>
+                		<div class="lecture-title">
+		                    <h1><%= chapter.title%></h1>
+		                 </div>
+
+                	<% end %>
+                	
+
                   <div class="lecture-title">
                     <h1>The Social Network</h1>
                   </div>
+
+
                   <div class="lecture-section">
                     <a href="course_video.html"  class="lecture-link">
                       <img src="images/play.png">
@@ -96,6 +93,8 @@
                    </a>
                   </div>
                 </div>
+
+
                 <div class="lecture">
                   <div class="lecture-title">
                     <h1>Planning</h1>
