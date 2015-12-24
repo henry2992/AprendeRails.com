@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20151223200743) do
     t.text     "description"
     t.string   "picture"
     t.string   "level"
-
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
     t.boolean  "status",          default: false
@@ -35,12 +34,6 @@ ActiveRecord::Schema.define(version: 20151223200743) do
     t.string   "bg_picture"
     t.string   "principal_title"
     t.string   "secondary_title"
-  end
-
-  create_table "uploads", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "users", force: :cascade do |t|
