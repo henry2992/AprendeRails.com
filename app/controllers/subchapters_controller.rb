@@ -1,0 +1,2 @@
+class SubchaptersController < ApplicationController
+end

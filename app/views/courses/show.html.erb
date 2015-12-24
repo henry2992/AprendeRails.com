@@ -63,16 +63,14 @@
 			                 <% chapter.subchapters.each do |subchapter| %>
 			                 	<div class="lecture-section">
 
-			               
+			               			<h1><%= subchapter.id %></h1>
 				                    
-				                    <%= link_to '#', :class => "lecture-link" do %>
+				                    <%= link_to course_subchapters_url(@course, subchapter), :class => "lecture-link" do %>
 									  <%= image_tag('play.png') %> <%= subchapter.title %>
 									<% end %>
 
 	                 			</div>
 			                 <% end %>
-
-
 	                	<% end %>
 
 	                
