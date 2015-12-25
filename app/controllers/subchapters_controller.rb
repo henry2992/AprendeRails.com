@@ -4,4 +4,9 @@ class SubchaptersController < ApplicationController
 		
 	end
 
+	def show
+		@subchapter = Subchapter.find(params[:id])
+		
+	end
+
 end
