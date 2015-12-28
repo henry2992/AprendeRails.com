@@ -19,9 +19,6 @@ Rails.application.routes.draw do
 	match '/auth/failure', to: redirect('/'), via: 'get'
 	get 'signout', to: 'sessions#destroy', as: 'signout'
 
-  resources :courses
-
-
   resources :courses do
 	  resources :subchapters
 	end
