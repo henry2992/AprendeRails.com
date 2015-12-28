@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151224175733) do
+ActiveRecord::Schema.define(version: 20151225141426) do
 
   create_table "chapters", force: :cascade do |t|
     t.string   "title"
@@ -21,6 +21,17 @@ ActiveRecord::Schema.define(version: 20151224175733) do
   end
 
   add_index "chapters", ["course_id"], name: "index_chapters_on_course_id"
+
+  create_table "codecasts", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "icon"
+    t.string   "level"
+    t.string   "video_url"
+    t.string   "color"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "courses", force: :cascade do |t|
     t.string   "title"

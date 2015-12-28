@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+ 
+
+  get '/codecasts'  => "codecasts#index"
+
+
   root "pages#index"
   
 

@@ -1,0 +1,54 @@
+<!-- CodeCast Section -->
+    <div class="container">
+        <!-- Section 1 App -->
+        <div id="section-1-codecast">
+          <h1 >Agrega facilmente nuevas características a tu aplicación</h1>
+          <h4> Tutoriales de Ruby on Rails que te enseñan 
+            cómo agregar características a tus aplicaciones web.
+          </h4>
+        </div>
+        <div class="line-section"></div>
+
+        <div class="row">
+          <!-- Code Cast -->
+          <% @codecasts.each do |codecast| %>
+            <div class="col-md-4 col-sm-6">
+                <a href="course_video.html" class="codecast-link">
+                    <div class="codecast">
+                      <div class="codecast-holder color-1">
+
+
+                           <%if codecast.level == "principiante" %>
+                              <div class="codecast-difficulty easy">Principiante</div>
+                            <%elsif codecast.level == "intermedio" %>
+                              <div class="codecast-difficulty medium">Intermedio</div>
+                            <%else%>
+                              <div class="codecast-difficulty hard">Avanzado</div>
+                            <%end%>
+
+                           
+
+                           <div class="codecast-title-holder ">
+                              <h1 class="codecast-title" > <%= codecast.title%> </h1>
+                           </div>
+                           <div class="codecast-img-holder">
+
+                              <%= image_tag codecast.icon.thumb.url, :class => "codecast-img" %>
+
+                           </div>
+                           
+                      </div>
+
+                      <div class="codecast-info">
+                        <h1> <%= codecast.title%> </h1>
+                        <p> <%= codecast.description%> </p>
+                      </div>
+                    </div>
+                </a>
+            </div>
+          <% end %>
+
+
+
+        </div>
+    </div>

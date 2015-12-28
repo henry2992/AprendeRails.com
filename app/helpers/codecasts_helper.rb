@@ -1,0 +1,2 @@
+module CodecastsHelper
+end
