@@ -10,7 +10,5 @@ class CoursesController < ApplicationController
     @subchapters = @course.subchapters(params[:id])
 
   end
-
-
   
 end

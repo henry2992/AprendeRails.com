@@ -1,10 +1,15 @@
 
 <div>
 	<div class="course-login">
+    <a class="course-login-link">Entrar al curso </a>
+	</div>
+	<div class="app-preview">
+		<%= link_to "Preview de la App", courses,  :class => "app-preview-link", :target => "_blank" %>
+	      <!-- <a href="<% courses %>" class=""> Preview de la App </a> -->
+
 	      <%= link_to "Entrar al curso", link,  :class => "course-login-link" %>
 	</div>
 	<div class="app-preview">
 		<%= link_to "Preview de la App", preview,  :class => "app-preview-link", :target => "_blank" %>
-
 	</div>
 </div>

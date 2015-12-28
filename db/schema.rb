@@ -59,12 +59,6 @@ ActiveRecord::Schema.define(version: 20151225141426) do
   add_index "subchapters", ["chapter_id"], name: "index_subchapters_on_chapter_id"
   add_index "subchapters", ["course_id"], name: "index_subchapters_on_course_id"
 
-  create_table "uploads", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "provider"
     t.string   "uid"

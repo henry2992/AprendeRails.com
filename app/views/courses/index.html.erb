@@ -34,8 +34,6 @@
 		        <p><%= course.description %></p>
 		      </div>
 
-
-
 		      <%if course.status == true %>
 		
 			      <%= render "courses/status_true", preview: course.preview_url, link: course_path(course)  %>
