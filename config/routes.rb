@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
  
-
+  devise_for :users
+  
   get '/codecasts'  => "codecasts#index"
 
 
@@ -15,8 +16,8 @@ Rails.application.routes.draw do
 
   get "/courses" => "courses#index"
 
-  match '/auth/:provider/callback', to: 'sessions#create', via: 'get'
-	match '/auth/failure', to: redirect('/'), via: 'get'
+  match 'users/auth/:provider/callback', to: 'sessions#create', via: 'get'
+	match 'users/auth/failure', to: redirect('/'), via: 'get'
 	get 'signout', to: 'sessions#destroy', as: 'signout'
 
   resources :courses do
