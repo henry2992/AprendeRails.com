@@ -1,15 +1,22 @@
 Rails.application.routes.draw do
  
+  #Root
+  root "courses#index"
+
+  #Device For USers
   devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
   
+  #Administrator Page
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  
+
+
   get '/codecasts'  => "codecasts#index"
 
 
-  root "pages#index"
+  
   
 
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  
 
   get "/app" => "pages#app"
   get "/index" => "pages#index"
