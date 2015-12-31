@@ -1,22 +1,33 @@
-<h1>Confirma tu Email</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Confirma tu Email</h1>
 
-<%= form_for(current_user, as: 'user', url: finish_signup_path(current_user)) do |f| %>
-  <% if @show_errors && current_user.errors.any? %>
-    <h2> Errores encontrados:</h2>
-    <ul>
-      <% current_user.errors.full_messages.each do |msg| %>
-        <li><%= msg %> </li>
-      <% end %> 
-    </ul>
-  <% end %>
+      <%= form_for(current_user, as: 'user', url: finish_signup_path(current_user)) do |f| %>
+        <% if @show_errors && current_user.errors.any? %>
+          <h2> Errores encontrados:</h2>
+          <ul>
+            <% current_user.errors.full_messages.each do |msg| %>
+              <li><%= msg %> </li>
+            <% end %> 
+          </ul>
+        <% end %>
 
-  <div>
-    <%= f.label :email %>
-    <%= f.text_field :email, autofocus: true, value: '', placeholder: 'Ejemplo: email@ejemplo.com' %>
+        <div>
+          <p><%= f.label :email %></p>
+          <div>
+            <%= f.text_field :email, autofocus: true, value: '', placeholder: 'Ejemplo: email@ejemplo.com' %>
+          </div>
+          
+        </div>
+
+        <div>
+          <%= f.submit 'Confirmar' %>
+        </div>
+
+      <% end %>
+
+    </div>
   </div>
+</div>
 
-  <div>
-    <%= f.submit 'Confirmar' %>
-  </div>
-
-<% end %>
