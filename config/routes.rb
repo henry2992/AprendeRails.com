@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
  
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
   
   get '/codecasts'  => "codecasts#index"
 
@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   match 'users/auth/:provider/callback', to: 'sessions#create', via: 'get'
 	match 'users/auth/failure', to: redirect('/'), via: 'get'
-	get 'signout', to: 'sessions#destroy', as: 'signout'
+  match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], as: :finish_signup
 
   resources :courses do
 	  resources :subchapters
