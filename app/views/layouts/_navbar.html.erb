@@ -17,8 +17,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Cursos<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">CodeCast</a></li>
+        <li class="<%= 'active' if params[:controller] == 'courses' %>"><%= link_to "Cursos", courses_path %></a></li>
+        <li class="<%= 'active' if params[:controller] == 'codecasts' %>"><%= link_to "CodeCast", codecasts_path  %> </li>
         <li><a href="#"><%= current_user.name%></a></li>
         <li><%= link_to "Salir", destroy_user_session_path, method: :delete %></li>
       </ul>

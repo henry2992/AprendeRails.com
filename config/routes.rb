@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   
 
 
+  resources :codecasts
+
   get '/codecasts'  => "codecasts#index"
 
 
