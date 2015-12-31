@@ -25,6 +25,8 @@ gem 'carrierwave'
 gem "mini_magick"
 gem "fog"
 
+gem 'friendly_id', '~> 5.1'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'pry'
