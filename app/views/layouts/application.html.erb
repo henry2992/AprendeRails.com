@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<% if current_user %>
+<% if current_user && current_user.email.split('@')[1] != 'change-me.com' %>
 	<%= render "layouts/navbar" %>
 <% else %>
 	<%= render "layouts/header" %>
