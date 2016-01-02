@@ -6,6 +6,7 @@ class CodecastsController < ApplicationController
 
 
   def show
+  	@codecast = Codecast.friendly.find(params[:id])
   end
 
   

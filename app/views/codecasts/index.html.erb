@@ -13,7 +13,11 @@
           <!-- Code Cast -->
           <% @codecasts.each do |codecast| %>
             <div class="col-md-4 col-sm-6">
-                <a href="course_video.html" class="codecast-link">
+
+             <%= link_to (codecast), :class => 'codecast-link'  do %>
+
+          
+
                     <div class="codecast">
                       <div class="codecast-holder color-1">
 
@@ -44,7 +48,8 @@
                         <p> <%= codecast.description%> </p>
                       </div>
                     </div>
-                </a>
+                
+              <% end %>
             </div>
           <% end %>
 
