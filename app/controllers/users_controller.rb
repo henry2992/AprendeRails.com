@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
       if @user.update(user_params)
         sign_in(@user, :bypass => true)
-        redirect_to app_path, notice: "Hemos actualizado tu email."
+        redirect_to codecasts_path, notice: "Hemos actualizado tu email."
       else
         @show_errors = true
       end
