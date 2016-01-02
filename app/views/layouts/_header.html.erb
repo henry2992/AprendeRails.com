@@ -7,10 +7,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a id="brand" class="navbar-brand " href="/">
-        <%= image_tag("logorails.png", id: "logo_img", alt: "Aprende Rails") %>
-        <h1 id="logo_text"> Aprende<span id="logo_color">Rails</span>.com</h1>
-      </a>
+
+      <% if !current_user %>
+        <a id="brand" class="navbar-brand" href="/">
+          <%= image_tag("logorails.png", id: "logo_img", alt: "Aprende Rails") %>
+          <h1 id="logo_text"> Aprende<span id="logo_color">Rails</span>.com</h1>
+        </a>
+      <% else %>
+        <a id="brand" class="navbar-brand" href="<%= finish_signup_path(current_user) %>">
+          <%= image_tag("logorails.png", id: "logo_img", alt: "Aprende Rails") %>
+          <h1 id="logo_text"> Aprende<span id="logo_color">Rails</span>.com</h1>
+        </a>
+      <% end %>
+
     </div>
   </div>
   <div class="navbar navbar-fixed-top" >
@@ -21,10 +30,15 @@
     				<li>
     					 <div class="row">
     							<div class="col-md-12">
-    								Ingresa vía:
+                    Ingresa vía:
                     <div class="social-buttons">
-    									<a href="users/auth/facebook" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-    									<a href="users/auth/twitter" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+    									<% if !current_user %>
+                        <a href="users/auth/facebook" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                        <a href="users/auth/twitter" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                      <% elsif current_user.provider == 'twitter' %>
+                        <%= link_to "Twitter", finish_signup_path(current_user), class: 'btn btn-tw' %>
+                        <%= link_to "Salir", destroy_user_session_path, method: :delete, class: 'btn btn-danger' %>
+                      <% end %>
   								</div>
     					 </div>
              </div>
