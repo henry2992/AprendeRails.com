@@ -4,7 +4,7 @@ class Course < ActiveRecord::Base
     friendly_id :course, use: :slugged
 
 
-	mount_uploader :picture, PictureUploader
+
 	has_many :chapters
 
 	has_many :subchapters

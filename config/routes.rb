@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
  
   #Root
-  root "courses#index"
+  root "pages#index"
 
   #Device For USers
   devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   
 
 
-  get "/app" => "pages#app"
+
   get "/index" => "pages#index"
 
   get "/courses" => "courses#index"
