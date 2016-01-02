@@ -5,8 +5,7 @@ class SubchaptersController < ApplicationController
 	end
 
 	def show
-		@subchapter = Subchapter.find(params[:id])
-		
+		@subchapter = Subchapter.friendly.find(params[:id])
 	end
 
 end

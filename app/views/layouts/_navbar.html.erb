@@ -8,7 +8,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a id="brand-app" class="navbar-brand " href="/app">
+
+      <a id="brand-app" class="navbar-brand " href="/codecasts">
         <%= image_tag("logorails.png", id: "logo_img", alt: "Aprende Rails") %>
         <h1 id="logo_text"> Aprende<span id="logo_color">Rails</span>.com</h1>
       </a>
@@ -17,7 +18,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="<%= 'active' if params[:controller] == 'courses' %>"><%= link_to "Cursos", courses_path %></a></li>
+        <li class="<%= 'active' if params[:controller] == 'courses' %>"><%= link_to "Cursos", courses_path %></li>
         <li class="<%= 'active' if params[:controller] == 'codecasts' %>"><%= link_to "CodeCast", codecasts_path  %> </li>
         <li><a href="#"><%= current_user.name%></a></li>
         <li><%= link_to "Salir", destroy_user_session_path, method: :delete %></li>
