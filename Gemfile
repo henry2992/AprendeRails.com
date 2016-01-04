@@ -26,6 +26,7 @@ gem "mini_magick"
 gem "fog"
 
 gem 'friendly_id', '~> 5.1'
+gem "cancancan"
 
 group :development, :test do
   gem 'sqlite3'
