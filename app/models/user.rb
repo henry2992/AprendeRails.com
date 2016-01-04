@@ -65,15 +65,4 @@ class User < ActiveRecord::Base
     end
   end
 
-  def admin?
-    user = User.find_by(email: email)
-    if user == true 
-      return true
-    else
-      return false     
-    end
- 
-  end
-
-
 end
