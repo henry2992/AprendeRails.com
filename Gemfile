@@ -28,6 +28,8 @@ gem "fog"
 gem 'friendly_id', '~> 5.1'
 gem "cancancan"
 
+gem 'route_translator'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'pry'

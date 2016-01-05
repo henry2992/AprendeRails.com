@@ -18,11 +18,9 @@ ActiveRecord::Schema.define(version: 20160104181925) do
     t.integer  "course_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "slug"
   end
 
   add_index "chapters", ["course_id"], name: "index_chapters_on_course_id"
-  add_index "chapters", ["slug"], name: "index_chapters_on_slug", unique: true
 
   create_table "codecasts", force: :cascade do |t|
     t.string   "title"

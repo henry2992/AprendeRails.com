@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 
   #Device For USers
   devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
+
+  localized do 
+    devise_for :users
+  end
   
   #Administrator Page
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
@@ -15,15 +19,21 @@ Rails.application.routes.draw do
 
   get '/codecasts'  => "codecasts#index"
 
-
-  
-  
+  localized do 
+    resources :codecasts
+  end
 
 
 
   get "/index" => "pages#index"
 
   get "/courses" => "courses#index"
+
+  localized do 
+    get '/index', to: 'pages#index', as: :index
+    
+    get "/courses", to: "courses#index", as: :courses
+  end
 
   match 'users/auth/:provider/callback', to: 'sessions#create', via: 'get'
 	match 'users/auth/failure', to: redirect('/'), via: 'get'
@@ -32,6 +42,12 @@ Rails.application.routes.draw do
   resources :courses do
 	  resources :subchapters
 	end
+
+  localized do 
+    resources :courses do
+      resources :subchapters
+    end
+  end
    
 
 end
