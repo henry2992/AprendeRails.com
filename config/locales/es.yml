@@ -70,7 +70,6 @@ es:
       not_saved:
         one: "1 error impidió que este %{resource} fuese guardado:"
         other: "%{count} errores impidieron que este %{resource} fuese guardado:"
-        es:
   admin:
     js:
       true: Cierto
