@@ -175,12 +175,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-.social_signin button{
+.social_signin a{
     width: 200px;
     margin-top: 10px;
     left: 0;
     right: 0;
+    color: white !important;
 }
+
+
 
 /*************** SECTION 2 ********************/
 #section_2{
@@ -393,7 +396,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 20px;
 }
 
-.social_signin_button button{
+.social_signin_button a{
       width: 200px;
       margin-top: 10px;
       left: 0;
