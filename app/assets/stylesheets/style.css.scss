@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #section_1 p {
-  font-weight: lighter;
+  font-weight: normal;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 #section_3 p {
   font-size: 1.2em;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 1.2em;
   color:  #999 !important;
   letter-spacing: 0.1em;
@@ -431,8 +431,6 @@ h1, h2, h3, h4, h5, h6, p {
   .navbar-fixed-top{
       margin-top: -9px !important;
   }
-
-
 
   #info_h2 {
      margin-top: 80px;
