@@ -2,6 +2,7 @@ class CodecastsController < ApplicationController
 
   def index
   	@codecasts = Codecast.all
+  	blabla
   end
 
 

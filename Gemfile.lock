@@ -42,6 +42,10 @@ GEM
       execjs
       json
     bcrypt (3.1.10)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.6)
@@ -365,6 +369,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors (~> 2.1, >= 2.1.1)
+  binding_of_caller (~> 0.7.2)
   bootstrap-sass (~> 3.3.6)
   bootstrap-will_paginate (= 0.0.10)
   byebug
@@ -395,3 +401,6 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
   will_paginate (= 3.0.7)
+
+BUNDLED WITH
+   1.11.2
