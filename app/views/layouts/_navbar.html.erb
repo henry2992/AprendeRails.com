@@ -21,6 +21,11 @@
         <li class="<%= 'active' if params[:controller] == 'courses' %>"><%= link_to "Cursos", courses_path %></li>
         <li class="<%= 'active' if params[:controller] == 'codecasts' %>"><%= link_to "CodeCast", codecasts_path  %> </li>
         <li><a href="#"><%= current_user.name%></a></li>
+        <% if current_user.admin? %>
+          <li>
+            <%= link_to "Admin", rails_admin_path %>
+          </li>
+        <% end %>
         <li><%= link_to "Salir", destroy_user_session_path, method: :delete %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
