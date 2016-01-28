@@ -29,6 +29,7 @@ gem 'friendly_id', '~> 5.1'
 gem "cancancan"
 
 gem 'route_translator'
+gem 'rails-i18n'
 
 group :development, :test do
   gem 'sqlite3'

@@ -21,6 +21,7 @@
         <li class="<%= 'active' if params[:controller] == 'courses' %>"><%= link_to "Cursos", courses_path %></li>
         <li class="<%= 'active' if params[:controller] == 'codecasts' %>"><%= link_to "CodeCast", codecasts_path  %> </li>
         <li><a href="#"><%= current_user.name%></a></li>
+        <li><%= link_to "Blog", posts_path%></li>
         <% if current_user.admin? %>
           <li>
             <%= link_to "Admin", rails_admin_path %>
