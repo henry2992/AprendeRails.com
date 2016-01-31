@@ -31,6 +31,9 @@ gem "cancancan"
 gem 'route_translator'
 gem 'rails-i18n'
 
+gem 'redcarpet'
+gem 'pygments.rb'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'pry'
