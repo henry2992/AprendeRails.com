@@ -1,12 +1,28 @@
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<div class="container">
+  
+  <!-- Section 1 Blog Title-->
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
+  <div id="section-1-app">
+    <h1 class="blog-title">
+      <%= @post.title %>
+    </h1>
+    
+    <h4 class="blog-posted-at">
+     <!-- <em>Publicado <%= l(@post.created_at, format: "%d de %B, %Y") %></em> -->
+      <em>Publicado hace <%= time_ago_in_words(@post.created_at) %></em>
+    </h4>
+    <% if current_user.admin? %>
+      <%= link_to 'Edit', edit_post_path(@post) %> |
+      <%= link_to 'Back', posts_path %>
+    <% end %>
+  </div>
+  
+  <hr>
+    
+  <!-- Section 2 Blog Content -->
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+  <p class="blog-content">
+    <%= @post.content %>
+  </p>
+
+</div>
